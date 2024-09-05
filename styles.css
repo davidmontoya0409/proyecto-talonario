@@ -1,0 +1,97 @@
+/* CSS General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header-info {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.header-info p {
+    margin: 10px 0;
+}
+
+.header-info .descripcion {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.header-info .premio {
+    font-size: 4.5em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.header-info .premio span {
+    color: #f1c40f;
+}
+
+.header-info .fecha-loteria {
+    font-size: 2.3em;
+    color: #ecf0f1;
+    background: rgba(238, 53, 7, 0.959);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.header-info .responsable {
+    margin-top: 20px;
+    font-size: 2.3em;
+    color: #f1ecec;
+    background: rgb(98, 0, 255);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.header-info .responsable span {
+    font-weight: bold;
+}
+
+/* Estilos de los botones */
+#contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 botones por fila */
+    gap: 10px;
+    padding: 20px;
+    max-width: 1450px;
+    margin: 0 auto;
+    background: #1f1d1de0;
+}
+
+button {
+    width: 128px;
+    height: 90px;
+    background-color: white; /* Color por defecto */
+    border: 1px solid #888;
+    font-size: 16px;
+    color: black; /* Muestra el número por defecto */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+button.ocultar {
+    color: transparent; /* Oculta el número cuando se hace clic */
+    background-color: red; /* Cambia el color a rojo cuando se hace clic */
+}
